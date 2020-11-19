@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/cardview_light_background">
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_item_movie1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp">
+        <ImageView
+            android:id="@+id/image_movie_poster"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            />
+        <ImageView
+            android:id="@+id/image_rating"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:paddingTop="20dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/rating_star_icon_removebg_preview"
+            />
+        <TextView
+            android:id="@+id/textview_average_vote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below= "@id/image_rating"
+            android:paddingRight="20dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/yellow"
+            android:textSize="20dp"
+            android:fontFamily="@font/droidserifbold" />
+
+        <TextView
+            android:id="@+id/textview_title"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/image_movie_poster"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/dark_blue"
+            android:textSize="20dp"
+            android:fontFamily="@font/droidserifbold" />
+
+        <TextView
+            android:id="@+id/textview_genres"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/image_movie_poster"
+            android:layout_below="@id/textview_title"
+            android:paddingLeft="10dp"
+            android:textColor="@color/light_grey"
+            android:textSize="15dp"
+            android:fontFamily="@font/droidserifbolditalic" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relativelayout_item_movie2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/relativelayout_item_movie1"
+        >
+        <TextView
+            android:id="@+id/textview_overview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/black"
+            android:textSize="13dp"
+            android:fontFamily="@font/fallingskybd"
+            android:justificationMode="inter_word"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:orientation="vertical"
+        android:background="@color/grey"
+        android:layout_below="@+id/relativelayout_item_movie2"></LinearLayout>
+</RelativeLayout>
